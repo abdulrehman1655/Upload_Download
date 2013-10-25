@@ -5,6 +5,10 @@ get 'hello/upload_1' => 'hello#upload_1'
 get 'hello/display'=>'hello#display'
 get 'hello/download'=>'hello#download'
 get 'hello/delete'=>'hello#delete'
+get 'hello/multiple'=>'hello#multiple'
+get 'hello/multiple_1'=>'hello#multiple_1'
+post 'hello/multiple_1'=>'hello#multiple_1'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
