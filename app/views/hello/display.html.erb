@@ -1,0 +1,33 @@
+<h1>File Upload </h1>
+<table>
+  <tr>
+    <td>ID
+    <td>
+    <td>Name
+    <td>
+    <td>Email
+    <td>
+    <td>Pic
+    <td>
+    <td>Download
+    <td>
+    <td>Delete
+    <td>
+  </tr>
+  <%@user.each do |i|%>
+      <tr>
+        <td><%=i.id%>
+        <td>
+        <td><%=i.name%>
+        <td>
+        <td><%=i.email%>
+        <td>
+        <td><img src="<%=i.avatar.url%>" alt="image not available" height="50" width="50">
+        <td>
+        <td> <a href="/hello/download?url=<%=i.avatar.url%>">Download</a>
+        </td>
+        <td> <a href="/hello/delete?id=<%=i.id%>">Delete</a>
+        </td>
+      </tr>
+  <%end%>
+</table>
